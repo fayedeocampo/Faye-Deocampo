@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.5;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #ffffff;
+    border: 2px solid #d0d7de;
+    padding: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header h1 {
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.highlight {
+    color: #0b63d6;
+    font-weight: 600;
+}
+
+mark {
+    background-color: #d4ffa2;
+    color: #333;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.main-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content {
+    flex: 2;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e0e6ea;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 0;
+    background: #ffffff;
+    border: 2px dotted #0b63d6;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.profile-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 2px dashed #c8d5e8;
+    padding: 24px;
+    margin-bottom: 14px;
+    background: #fbfdff;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 3px solid #dbe9ff;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-info h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.profile-info p {
+    font-size: 0.9rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.contact-btn {
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #0b63d6;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #084ca5;
+}
+
+.about h3 {
+    color: #0b63d6;
+    border-bottom: 2px solid #dbe9ff;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.sidebar h3 {
+    color: #0b63d6;
+    border-bottom: 2px solid #dbe9ff;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #0b63d6;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 16px;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 800px) {
+    .main-area {
+        flex-direction: column;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+    }
+
+    .avatar {
+        width: 72px;
+        height: 72px;
+    }
+}
