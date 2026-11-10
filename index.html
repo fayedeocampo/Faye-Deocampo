@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Portfolio Lab 3</title>
+
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: #ffffff;
+            border: 2px solid #d0d7de;
+            padding: 18px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .header h1 {
+            letter-spacing: 1px;
+            font-size: 1.6rem;
+        }
+
+        /* Blue Highlight */
+        .highlight {
+            color: #0b63d6;
+            font-weight: 600;
+        }
+
+        /* Green Highlight Using Mark */
+        mark {
+            background-color: #d4ffa2;
+            color: #333;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        /* Main Layout */
+        .main-area {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /*
+        Assessment Task 3:
+        Temporarily change display: flex
+        to display: block to observe the layout.
+        Restore Flexbox afterward.
+        */
+
+        /* Main Content */
+        .content {
+            flex: 2;
+            min-width: 0;
+            background: #ffffff;
+            border: 1px solid #e0e6ea;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1;
+            min-width: 0;
+            background: #ffffff;
+            border: 2px dotted #0b63d6;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            border: 2px dashed #c8d5e8;
+            padding: 24px;
+            margin-bottom: 14px;
+            background: #fbfdff;
+        }
+
+        /* Profile Picture */
+        .avatar {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 3px solid #dbe9ff;
+            flex-shrink: 0;
+        }
+
+        /* Profile Information */
+        .profile-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .profile-info h2 {
+            font-size: 1.2rem;
+            margin-bottom: 4px;
+        }
+
+        .profile-info p {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            margin-top: 8px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background: #0b63d6;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contact-btn:hover {
+            background: #084ca5;
+        }
+
+        /* About Me */
+        .about h3 {
+            color: #0b63d6;
+            border-bottom: 2px solid #dbe9ff;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 0.9rem;
+        }
+
+        /* Sidebar Links */
+        .sidebar h3 {
+            color: #0b63d6;
+            border-bottom: 2px solid #dbe9ff;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: #0b63d6;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 16px;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 800px) {
+            .main-area {
+                flex-direction: column;
+            }
+
+            .content,
+            .sidebar {
+                width: 100%;
+            }
+
+            .avatar {
+                width: 72px;
+                height: 72px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>
+                IT Portfolio
+                <span class="highlight">Lab 3</span>
+            </h1>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-area">
+
+            <!-- Main Content -->
+            <main class="content">
+
+                <!-- Profile Card -->
+                <div class="profile-card">
+
+                    <!-- Profile Picture -->
+                    <img src="pussycat.jpg"
+                         alt="My Profile Picture"
+                         class="avatar">
+
+                    <div class="profile-info">
+                        <h2>Faye Deocampo</h2>
+
+                        <p>
+                            <span class="highlight">
+                                BSIT Student
+                            </span>
+                        </p>
+
+                        <p>
+                            I am a student who enjoys learning
+                            about technology, programming,
+                            and web development.
+                        </p>
+
+                        <button class="contact-btn">
+                            Contact Me
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- About Me -->
+                <section class="about">
+                    <h3>About Me</h3>
+
+                    <p>
+                        Welcome to my <mark>IT Portfolio!</mark>
+                        I am a <mark>BSIT Student</mark>
+                        who enjoys learning about
+                        <span class="highlight">technology</span>,
+                        <mark>HTML</mark>,
+                        <mark>CSS</mark>, and
+                        <mark>programming</mark>.
+                        I am passionate about improving my
+                        skills and exploring new opportunities
+                        in <mark>web development</mark>.
+                    </p>
+                </section>
+
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Module 9</a></li>
+                    <li><a href="#">Module 10</a></li>
+                    <li><a href="#">Module 12</a></li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 — CSIT Lab</p>
+        </footer>
+
+    </div>
+</body>
+</html>
